@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LocationName": {
+      "type": "string"
+    },
+    "LocationDescription": {
+      "type": "string"
+    },
+    "CitizensHere": {
+      "type": "enumeration",
+      "enum": [
+        "Antonio Fernandez García",
+        "Lidia Orellana Suarez",
+        "Manuela Duarte Ramos "
+      ]
+    }
+  }
+}

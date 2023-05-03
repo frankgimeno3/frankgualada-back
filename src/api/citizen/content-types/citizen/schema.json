@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citizens",
+  "info": {
+    "singularName": "citizen",
+    "pluralName": "citizens",
+    "displayName": "Citizen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nameAndSurnames": {
+      "type": "uid"
+    },
+    "isAlive": {
+      "type": "boolean",
+      "default": true
+    },
+    "isSick": {
+      "type": "boolean",
+      "default": false
+    },
+    "age": {
+      "type": "integer",
+      "default": 40
+    },
+    "sex": {
+      "type": "string",
+      "default": "female"
+    },
+    "marriedTo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::citizen.citizen"
+    },
+    "worksAT": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "timetable": {
+      "type": "string",
+      "default": "morning"
+    },
+    "isReligious": {
+      "type": "boolean",
+      "default": true
+    },
+    "currentlocation": {
+      "type": "string"
+    },
+    "currentActivity": {
+      "type": "string"
+    }
+  }
+}
